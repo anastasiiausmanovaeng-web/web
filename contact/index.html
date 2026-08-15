@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../image/logo.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    >
+
+    <title>
+        Contact | Anastasiia Usmanova
+    </title>
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="site-header">
+
+        <nav
+            class="navbar"
+            aria-label="Main navigation"
+        >
+
+            <a
+                class="logo"
+                href="../"
+            >
+
+                <img
+                    class="site-logo-image"
+                    src="../image/logo.png"
+                    alt=""
+                >
+
+                <span class="site-logo-name">
+                    Anastasiia<span>.</span>Usmanova
+                </span>
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="../">
+                    Home
+                </a>
+
+                <a href="../about/">
+                    About
+                </a>
+
+                <a href="../experience/">
+                    Experience
+                </a>
+
+                <a href="../projects/">
+                    Projects
+                </a>
+
+                <a
+                    class="active-nav-link"
+                    href="./"
+                >
+                    Contact
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Contact -->
+
+        <section class="contact-page">
+
+            <div class="section-container contact-page-grid">
+
+                <div class="contact-page-introduction">
+
+                    <p class="section-label">
+                        Let’s connect
+                    </p>
+
+                    <h1>
+                        Contact me.
+                    </h1>
+
+                    <p>
+                        I’m happy to connect about mechanical engineering,
+                        thermal-fluid systems, experimental research,
+                        technical projects, and early-career opportunities.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-panel">
+
+                    <!-- Contact form -->
+
+                    <form
+                        class="contact-form"
+                        id="contact-form"
+                        onsubmit="submitContactForm(event)"
+                    >
+
+                        <div class="contact-form-heading">
+
+                            <p class="section-label">
+                                Send a message
+                            </p>
+
+                            <h2>
+                                How can I help?
+                            </h2>
+
+                        </div>
+
+
+                        <div class="contact-form-row">
+
+                            <label>
+
+                                <span>
+                                    Name
+                                </span>
+
+                                <input
+                                    type="text"
+                                    name="name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </label>
+
+
+                            <label>
+
+                                <span>
+                                    Email
+                                </span>
+
+                                <input
+                                    type="email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </label>
+
+                        </div>
+
+
+                        <label>
+
+                            <span>
+                                Subject
+                            </span>
+
+                            <input
+                                type="text"
+                                name="subject"
+                                required
+                            >
+
+                        </label>
+
+
+                        <label>
+
+                            <span>
+                                Message
+                            </span>
+
+                            <textarea
+                                name="message"
+                                rows="6"
+                                required
+                            ></textarea>
+
+                        </label>
+
+
+                        <button
+                            class="button primary-button"
+                            type="submit"
+                        >
+                            Send Message
+                        </button>
+
+                    </form>
+
+
+                    <!-- Success message -->
+
+<div
+    class="contact-form-success"
+    id="contact-form-success"
+    role="status"
+    aria-live="polite"
+    hidden
+>
+
+    <div>
+
+        <strong>
+            Thank you!
+        </strong>
+
+        <p>
+            I received your message and will get back to you soon.
+        </p>
+
+    </div>
+
+
+    <img
+        class="contact-success-lizard"
+        src="../image/lizard.jpg"
+        alt=""
+    >
+
+</div>
+
+                    <!-- Direct links -->
+
+                    <div class="contact-direct-links">
+
+                        <a
+                            href="mailto:anastasiia.usmanova.eng@gmail.com"
+                        >
+                            Email directly
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/ausmanova/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn ↗
+                        </a>
+
+                        <a
+                            href="https://drive.google.com/file/d/1IAk1YIRx1ODrd-aK2GtUqN830A_kuqkT/view"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Résumé ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <a
+                    class="footer-logo"
+                    href="../"
+                >
+
+                    <img
+                        src="../image/logo.png"
+                        alt=""
+                    >
+
+                    <span>
+                        Anastasiia Usmanova
+                    </span>
+
+                </a>
+
+                <p>
+                    Mechanical engineering student focused on thermal-fluid
+                    systems, experimental hardware, and engineering design.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="../about/">
+                    About
+                </a>
+
+                <a href="../experience/">
+                    Experience
+                </a>
+
+                <a href="../projects/">
+                    Projects
+                </a>
+
+                <a href="./">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Connect
+                </h3>
+
+                <a
+                    href="mailto:anastasiia.usmanova.eng@gmail.com"
+                >
+                    Email
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/ausmanova/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn ↗
+                </a>
+
+                <a
+                    href="https://drive.google.com/file/d/1IAk1YIRx1ODrd-aK2GtUqN830A_kuqkT/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Résumé ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Anastasiia Usmanova
+            </p>
+
+            <p>
+                Created by
+
+                <a
+                    href="https://www.linkedin.com/in/ausmanova/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Anastasiia Usmanova ↗
+                </a>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Contact form submission -->
+
+    <script>
+
+        const CONTACT_SCRIPT_URL =
+            "https://script.google.com/macros/s/AKfycbzAjvnVkNk5hCcjMkMyLxqVtFxslOe40qlFFZA8txclO9arJPHMOx-YaSlUEi0PNmUHJQ/exec";
+
+
+        async function submitContactForm(event) {
+
+            event.preventDefault();
+
+            const form = event.currentTarget;
+
+            const button = form.querySelector(
+                'button[type="submit"]'
+            );
+
+            const successMessage =
+                document.getElementById(
+                    "contact-form-success"
+                );
+
+
+            button.disabled = true;
+            button.textContent = "Sending…";
+
+
+            try {
+
+                await fetch(
+                    CONTACT_SCRIPT_URL,
+                    {
+                        method: "POST",
+                        body: new FormData(form),
+                        mode: "no-cors"
+                    }
+                );
+
+
+                form.hidden = true;
+                successMessage.hidden = false;
+
+                form.reset();
+
+
+            } catch (error) {
+
+                button.disabled = false;
+                button.textContent = "Send Message";
+
+                alert(
+                    "Something went wrong. Please try again or email me directly."
+                );
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
