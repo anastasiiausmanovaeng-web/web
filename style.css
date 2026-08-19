@@ -3852,3 +3852,14 @@ footer {
     }
 
 }
+
+.contact-note {
+    margin-top: 1.5rem;
+    padding: 1rem 1.1rem;
+    border-left: 3px solid var(--accent);
+    background: var(--soft-background);
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-radius: 0 0.6rem 0.6rem 0;
+}
