@@ -3863,3 +3863,16 @@ footer {
     line-height: 1.6;
     border-radius: 0 0.6rem 0.6rem 0;
 }
+
+.about-values-text {
+    align-self: center;
+}
+
+
+@media (max-width: 750px) {
+
+    .about-values-text {
+        align-self: auto;
+    }
+
+}
