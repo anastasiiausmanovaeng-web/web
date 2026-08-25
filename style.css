@@ -3864,6 +3864,996 @@ footer {
     border-radius: 0 0.6rem 0.6rem 0;
 }
 
+/* ==================================================
+   REGENLOOP PROJECT PAGE
+================================================== */
+
+.regenloop-page-hero {
+    padding: 55px 0 60px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(238, 247, 250, 0.96),
+            rgba(220, 236, 242, 0.88)
+        ),
+        url("image/mountain.JPG") center / cover no-repeat;
+}
+
+
+.regenloop-back-link {
+    display: inline-block;
+    margin-bottom: 27px;
+    color: var(--blue-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.regenloop-back-link:hover {
+    color: var(--accent-dark);
+}
+
+
+.regenloop-page-hero h1 {
+    max-width: 1000px;
+    margin: 0;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 800;
+    letter-spacing: -0.065em;
+    line-height: 0.94;
+}
+
+
+.regenloop-page-hero h1 span {
+    display: block;
+    color: var(--blue);
+    font-size: 0.62em;
+    line-height: 1.08;
+}
+
+
+.regenloop-project-title {
+    max-width: 780px;
+    margin: 25px 0 0;
+    color: var(--charcoal);
+    font-family: var(--heading-font);
+    font-size: clamp(1.15rem, 2.5vw, 1.65rem);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+
+.regenloop-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+
+.regenloop-hero-meta span {
+    padding: 7px 11px;
+    color: var(--blue-dark);
+    border: 1px solid rgba(47, 103, 130, 0.22);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.72);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+
+/* Shared section styles */
+
+.regenloop-project-section,
+.regenloop-work-section {
+    padding: 65px 0;
+}
+
+
+.regenloop-project-section {
+    background: var(--white);
+}
+
+
+.regenloop-work-section {
+    background: var(--light-gray);
+}
+
+
+.regenloop-section-heading {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 32px;
+}
+
+
+.regenloop-section-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    color: var(--white);
+    border-radius: 50%;
+    background: var(--accent);
+    font-family: var(--heading-font);
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+
+.regenloop-section-heading h2 {
+    max-width: 900px;
+    margin: 0;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: clamp(2.25rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1.08;
+}
+
+
+.regenloop-lead {
+    color: var(--charcoal);
+    font-size: 1.04rem !important;
+    font-weight: 500;
+}
+
+
+/* About the project */
+
+.regenloop-overview-grid {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 0.82fr)
+        minmax(430px, 1.18fr);
+    gap: 45px;
+    align-items: start;
+}
+
+
+.regenloop-overview-copy p {
+    margin: 0 0 17px;
+    font-size: 0.91rem;
+    line-height: 1.75;
+}
+
+
+.regenloop-feature-figure,
+.regenloop-wide-figure,
+.regenloop-work-gallery figure {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0 9px 28px rgba(31, 63, 79, 0.06);
+}
+
+
+.regenloop-feature-figure img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+}
+
+
+.regenloop-wide-figure {
+    margin-top: 30px;
+}
+
+
+.regenloop-wide-figure img {
+    width: 100%;
+    max-height: 680px;
+    object-fit: contain;
+}
+
+
+.regenloop-feature-figure figcaption,
+.regenloop-wide-figure figcaption,
+.regenloop-work-gallery figcaption {
+    padding: 14px 17px;
+    color: var(--gray);
+    border-top: 1px solid var(--border);
+    font-size: 0.76rem;
+    line-height: 1.55;
+}
+
+
+.regenloop-feature-figure figcaption strong,
+.regenloop-wide-figure figcaption strong,
+.regenloop-work-gallery figcaption strong {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: 0.84rem;
+}
+
+
+/* Personal story */
+
+.regenloop-story-introduction {
+    max-width: 920px;
+    margin-bottom: 30px;
+}
+
+
+.regenloop-story-introduction p {
+    margin: 0 0 14px;
+    font-size: 0.91rem;
+    line-height: 1.75;
+}
+
+
+.regenloop-journey {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+
+.regenloop-journey article {
+    padding: 23px;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--blue);
+    border-radius: 7px;
+    background: var(--white);
+}
+
+
+.regenloop-journey article:nth-child(2) {
+    border-top-color: var(--accent);
+}
+
+
+.regenloop-journey article:nth-child(3) {
+    border-top-color: var(--blue-dark);
+}
+
+
+.regenloop-journey article > span {
+    color: var(--accent-dark);
+    font-size: 0.67rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+
+.regenloop-journey h3 {
+    margin: 9px 0;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: 1.08rem;
+}
+
+
+.regenloop-journey p {
+    margin: 0;
+    font-size: 0.81rem;
+    line-height: 1.65;
+}
+
+
+/* Work images */
+
+.regenloop-work-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+.regenloop-work-gallery figure {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.regenloop-work-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 410px;
+    padding: 10px;
+}
+
+
+.regenloop-work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.regenloop-work-gallery figcaption {
+    flex-grow: 1;
+}
+
+
+/* Areas of contribution */
+
+.regenloop-contributions {
+    margin-top: 38px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+
+.regenloop-contributions-heading {
+    margin-bottom: 20px;
+}
+
+
+.regenloop-contributions-heading h3 {
+    max-width: 700px;
+    margin: 0;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: clamp(1.45rem, 2.7vw, 2rem);
+    letter-spacing: -0.035em;
+    line-height: 1.2;
+}
+
+
+.regenloop-contributions ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.regenloop-contributions li {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 13px;
+    align-items: start;
+    min-height: 125px;
+    padding: 19px;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--blue);
+    border-radius: 7px;
+    background: var(--white);
+    box-shadow: 0 6px 18px rgba(31, 63, 79, 0.045);
+}
+
+
+.regenloop-contributions li:nth-child(2),
+.regenloop-contributions li:nth-child(5) {
+    border-top-color: var(--accent);
+}
+
+
+.regenloop-contributions li:nth-child(3),
+.regenloop-contributions li:nth-child(6) {
+    border-top-color: var(--blue-dark);
+}
+
+
+.regenloop-contributions li::before {
+    display: none;
+}
+
+
+.regenloop-contributions li > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    color: var(--accent-dark);
+    border-radius: 50%;
+    background: var(--page-background);
+    font-size: 0.65rem;
+    font-weight: 800;
+}
+
+
+.regenloop-contributions li p {
+    margin: 3px 0 0;
+    color: var(--gray);
+    font-size: 0.8rem;
+    line-height: 1.55;
+}
+
+
+@media (max-width: 950px) {
+
+    .regenloop-contributions ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .regenloop-contributions ul {
+        grid-template-columns: 1fr;
+    }
+
+
+    .regenloop-contributions li {
+        min-height: 0;
+    }
+
+}
+
+
+
+
+/* Future */
+
+.regenloop-future-section {
+    padding: 60px 0;
+    background: var(--heading);
+}
+
+
+.regenloop-future-content {
+    max-width: 900px;
+}
+
+
+.regenloop-future-content h2 {
+    margin: 0 0 18px;
+    color: var(--white);
+    font-family: var(--heading-font);
+    font-size: clamp(2.25rem, 5vw, 4rem);
+    letter-spacing: -0.05em;
+    line-height: 1.08;
+}
+
+
+.regenloop-future-content > p:last-child {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+
+
+/* Public information note */
+
+.regenloop-disclosure-section {
+    padding: 25px 0 45px;
+    background: var(--white);
+}
+
+
+.regenloop-disclosure {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 17px;
+    align-items: start;
+    padding: 17px 19px;
+    background: var(--soft-background);
+}
+
+
+.regenloop-disclosure span {
+    padding: 5px 9px;
+    color: var(--accent-dark);
+    border: 1px solid rgba(200, 95, 44, 0.3);
+    border-radius: 4px;
+    background: rgba(236, 135, 71, 0.11);
+    font-size: 0.64rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.regenloop-disclosure p {
+    margin: 0;
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+    .regenloop-overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .regenloop-feature-figure {
+        max-width: 780px;
+    }
+
+
+    .regenloop-journey {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .regenloop-page-hero {
+        padding: 42px 0 47px;
+    }
+
+
+    .regenloop-page-hero h1 {
+        font-size: clamp(3.3rem, 16vw, 5rem);
+    }
+
+
+    .regenloop-project-section,
+    .regenloop-work-section {
+        padding: 45px 0;
+    }
+
+
+    .regenloop-section-heading {
+        grid-template-columns: 42px 1fr;
+        gap: 14px;
+    }
+
+
+    .regenloop-section-number {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .regenloop-work-gallery,
+    .regenloop-contributions ul {
+        grid-template-columns: 1fr;
+    }
+
+
+    .regenloop-work-image {
+        height: 330px;
+    }
+
+
+    .regenloop-disclosure {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .regenloop-section-heading {
+        grid-template-columns: 1fr;
+    }
+
+
+    .regenloop-work-image {
+        height: 270px;
+    }
+
+
+    .regenloop-contributions {
+        padding: 20px;
+    }
+
+}
+
+/* ==================================================
+   REGENLOOP — LAB BANNER
+================================================== */
+
+.regenloop-lab-banner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 28px;
+    padding: 13px 17px;
+    border: 1px solid rgba(47, 103, 130, 0.24);
+    border-left: 5px solid var(--accent);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+
+.regenloop-lab-banner > span {
+    color: var(--accent-dark);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+
+.regenloop-lab-banner strong {
+    display: block;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: 1rem;
+}
+
+
+.regenloop-lab-banner p {
+    margin: 2px 0 0;
+    font-size: 0.72rem;
+}
+
+
+/* ==================================================
+   REGENLOOP — PROJECT OVERVIEW
+================================================== */
+
+.regenloop-overview-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(280px, 0.75fr);
+    gap: 45px;
+    align-items: start;
+}
+
+
+.regenloop-project-facts {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--blue);
+    border-radius: 7px;
+    background: var(--page-background);
+}
+
+
+.regenloop-project-facts div {
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+
+.regenloop-project-facts div:last-child {
+    border-bottom: 0;
+}
+
+
+.regenloop-project-facts span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--accent-dark);
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+.regenloop-project-facts strong {
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: 0.83rem;
+    line-height: 1.4;
+}
+
+
+/* ==================================================
+   REGENLOOP — SMALLER DIAGRAMS
+================================================== */
+
+.regenloop-diagram-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 35px auto 0;
+}
+
+
+.regenloop-diagram-gallery figure {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0 8px 25px rgba(31, 63, 79, 0.055);
+}
+
+
+.regenloop-diagram-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 315px;
+    padding: 14px;
+    background: var(--white);
+}
+
+
+.regenloop-diagram-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.regenloop-diagram-gallery figcaption {
+    flex-grow: 1;
+    padding: 14px 17px;
+    color: var(--gray);
+    border-top: 1px solid var(--border);
+    font-size: 0.75rem;
+    line-height: 1.55;
+}
+
+
+.regenloop-diagram-gallery figcaption strong {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: 0.83rem;
+}
+
+
+/* ==================================================
+   REGENLOOP — ACKNOWLEDGMENTS
+================================================== */
+
+.regenloop-acknowledgments-section {
+    padding: 60px 0;
+    background: var(--page-background);
+}
+
+
+.regenloop-acknowledgments-heading {
+    max-width: 850px;
+    margin-bottom: 28px;
+}
+
+
+.regenloop-acknowledgments-heading h2 {
+    margin: 0;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+}
+
+
+.regenloop-acknowledgments-heading > p:last-child {
+    max-width: 760px;
+    margin: 15px 0 0;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+.regenloop-team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+
+.regenloop-team-grid article {
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--blue);
+    border-radius: 7px;
+    background: var(--white);
+}
+
+
+.regenloop-team-grid article:last-child {
+    border-top-color: var(--accent);
+}
+
+
+.regenloop-team-organization {
+    margin: 0 0 7px;
+    color: var(--accent-dark);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+.regenloop-team-grid h3 {
+    margin: 0 0 15px;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+}
+
+
+.regenloop-team-grid ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.regenloop-team-grid li {
+    padding: 7px 10px;
+    color: var(--blue-dark);
+    border-radius: 4px;
+    background: var(--soft-background);
+    font-size: 0.76rem;
+    font-weight: 700;
+}
+
+
+.regenloop-team-thanks {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-top: 18px;
+    padding: 18px 21px;
+    border-left: 5px solid var(--accent);
+    background: var(--white);
+}
+
+
+.regenloop-team-thanks span {
+    flex-shrink: 0;
+    color: var(--accent-dark);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+.regenloop-team-thanks p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.82rem;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 600px) {
+
+    .regenloop-team-thanks {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+    .regenloop-overview-layout,
+    .regenloop-team-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .regenloop-project-facts {
+        max-width: 600px;
+    }
+
+
+    .regenloop-diagram-image {
+        height: 270px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .regenloop-diagram-gallery {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+    }
+
+
+    .regenloop-lab-banner,
+    .regenloop-team-thanks {
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+
+    .regenloop-diagram-image {
+        height: 280px;
+    }
+
+}
+
+/* Senior Design — full-width featured project */
+
+#senior-design .discipline-project-grid {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+}
+
+
+#senior-design .discipline-project-card {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+}
+
+/* Featured project buttons */
+
+.featured-project-button {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: center;
+    gap: 11px;
+    min-height: 50px;
+    margin-top: 23px;
+    padding: 13px 21px;
+    color: var(--white);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    background: var(--accent);
+    box-shadow: 0 8px 20px rgba(200, 95, 44, 0.2);
+    font-size: 0.84rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.featured-project-button span {
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+}
+
+
+.featured-project-button:hover {
+    color: var(--white);
+    border-color: var(--accent-dark);
+    background: var(--accent-dark);
+    box-shadow: 0 11px 25px rgba(200, 95, 44, 0.27);
+    transform: translateY(-2px);
+}
+
+
+.featured-project-button:hover span {
+    transform: translateX(4px);
+}
+
+
+@media (max-width: 480px) {
+
+    .featured-project-button {
+        width: 100%;
+    }
+
+}
+
 .about-values-text {
     align-self: center;
 }
@@ -3876,3 +4866,233 @@ footer {
     }
 
 }
+
+/* ==================================================
+   REGENLOOP EXPERIENCE CARD
+================================================== */
+
+.highlighted-experience-section .experience-entry {
+    display: grid;
+    grid-template-columns: minmax(250px, 0.7fr) minmax(0, 1.6fr);
+    width: 100%;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 5px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+
+/* Left column */
+
+.highlighted-experience-section .experience-meta {
+    padding: 38px 34px;
+    color: rgba(255, 255, 255, 0.8);
+    background: var(--heading);
+}
+
+.highlighted-experience-section .experience-meta h2 {
+    margin: 0 0 18px;
+    color: var(--white);
+    font-family: var(--heading-font);
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+}
+
+.highlighted-experience-section .experience-meta p {
+    margin: 0 0 7px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.highlighted-experience-section .experience-meta .experience-type {
+    margin-bottom: 26px;
+    color: var(--accent-light);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+
+/* Right column */
+
+.highlighted-experience-section .experience-content {
+    padding: 38px 42px;
+}
+
+.highlighted-experience-section .experience-content > h3 {
+    max-width: 760px;
+    margin: 0 0 20px;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: clamp(1.65rem, 3vw, 2.5rem);
+    line-height: 1.18;
+    letter-spacing: -0.04em;
+}
+
+.highlighted-experience-section .experience-content > p {
+    max-width: 780px;
+    margin: 0 0 16px;
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.85;
+}
+
+
+/* Areas of focus */
+
+.highlighted-experience-section .research-focus {
+    margin-top: 28px;
+    padding: 25px;
+    background: var(--page-background);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+}
+
+.highlighted-experience-section .research-focus h4 {
+    margin: 0 0 17px;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: 1.08rem;
+}
+
+.highlighted-experience-section .research-focus ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.highlighted-experience-section .research-focus li {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 16px 15px 16px 37px;
+    color: var(--gray);
+    font-size: 0.85rem;
+    line-height: 1.55;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.highlighted-experience-section .research-focus li::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 17px;
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+
+/* Confidentiality note */
+
+.highlighted-experience-section .confidentiality-note {
+    margin-top: 24px;
+    padding: 17px 20px;
+    background: var(--soft-background);
+    border-left: 4px solid var(--accent);
+}
+
+.highlighted-experience-section .confidentiality-note p {
+    margin: 0;
+}
+
+.highlighted-experience-section
+    .confidentiality-note
+    .confidentiality-label {
+    margin-bottom: 8px;
+    color: var(--accent-dark);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.highlighted-experience-section
+    .confidentiality-note
+    p:last-child {
+    color: var(--gray);
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+
+/* Hover */
+
+.highlighted-experience-section .experience-entry {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.highlighted-experience-section .experience-entry:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 34px rgba(31, 63, 79, 0.11);
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .highlighted-experience-section .experience-entry {
+        grid-template-columns: 1fr;
+    }
+
+    .highlighted-experience-section .experience-meta {
+        padding: 30px;
+    }
+
+    .highlighted-experience-section .experience-content {
+        padding: 32px 30px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .highlighted-experience-section .experience-meta,
+    .highlighted-experience-section .experience-content {
+        padding: 25px 21px;
+    }
+
+    .highlighted-experience-section .research-focus {
+        padding: 19px;
+    }
+
+    .highlighted-experience-section .research-focus ul {
+        grid-template-columns: 1fr;
+    }
+
+    .highlighted-experience-section .confidentiality-note {
+        padding: 16px;
+    }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .highlighted-experience-section .experience-entry {
+        transition: none;
+    }
+
+    .highlighted-experience-section .experience-entry:hover {
+        transform: none;
+    }
+
+}
+
