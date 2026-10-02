@@ -5096,3 +5096,469 @@ footer {
 
 }
 
+/* ==================================================
+   REGENLOOP PAGE
+================================================== */
+
+/* Typography and spacing */
+
+.regenloop-page {
+    background: var(--white);
+}
+
+.regenloop-page .rl-section {
+    padding: 52px 0;
+}
+
+.regenloop-page .section-heading {
+    margin-bottom: 28px;
+}
+
+.regenloop-page .section-title {
+    max-width: 850px;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.12;
+}
+
+.regenloop-page .rl-copy p,
+.regenloop-page .rl-team p,
+.regenloop-page .project-content > p:not(.project-category) {
+    font-size: 0.9rem;
+    line-height: 1.8 !important;
+}
+
+.regenloop-page .rl-copy p + p,
+.regenloop-page .rl-team p + p {
+    margin-top: 14px !important;
+}
+
+.regenloop-page .rl-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.regenloop-page .rl-actions .text-link {
+    font-size: 0.84rem;
+}
+
+/* Hero */
+
+.regenloop-page .hero-area {
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(
+        115deg,
+        var(--page-background),
+        var(--soft-background)
+    );
+}
+
+.regenloop-page .rl-hero {
+    padding: 38px 0 52px;
+}
+
+.regenloop-page .rl-back {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+}
+
+.regenloop-page .rl-hero h1 {
+    margin: 0 0 18px;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: clamp(3.2rem, 7vw, 5.6rem);
+    font-weight: 800;
+    letter-spacing: -0.055em;
+    line-height: 1;
+}
+
+.regenloop-page .rl-subtitle {
+    max-width: 760px;
+    margin: 0 0 18px;
+    color: var(--blue-dark);
+    font-family: var(--heading-font);
+    font-size: clamp(1.25rem, 2.6vw, 1.8rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.4 !important;
+}
+
+.regenloop-page .rl-hero .organization {
+    margin-top: 0 !important;
+    font-size: 0.82rem;
+}
+
+.regenloop-page .rl-summary {
+    max-width: 730px;
+    margin: 20px 0;
+    padding-left: 18px;
+    border-left: 3px solid var(--accent);
+    font-size: 0.94rem;
+    line-height: 1.8 !important;
+}
+
+.regenloop-page .rl-hero .project-tags span {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Project overview */
+
+.regenloop-page > .introduction-section {
+    background: var(--white);
+}
+
+.regenloop-page .rl-overview {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: 48px;
+}
+
+.regenloop-page .rl-overview .introduction-text {
+    padding-top: 0;
+}
+
+.regenloop-page .rl-overview .introduction-text p:first-child {
+    margin-top: 0;
+}
+
+/* Contribution cards */
+
+.regenloop-page #contributions {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--page-background);
+    scroll-margin-top: 24px;
+}
+
+.regenloop-page .rl-contributions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 18px;
+}
+
+.regenloop-page .rl-contributions .project-card {
+    height: 100%;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--blue);
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0 8px 24px rgba(31, 63, 79, 0.045);
+}
+
+.regenloop-page .rl-contributions .project-card:first-child,
+.regenloop-page .rl-contributions .project-card:last-child {
+    border-top-color: var(--accent);
+}
+
+.regenloop-page .rl-contributions .project-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px;
+}
+
+.regenloop-page .rl-contributions h3 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.regenloop-page .rl-contributions .project-content > p:not(.project-category) {
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+}
+
+.regenloop-page .rl-contributions .project-tags {
+    margin: auto 0 0;
+    padding-top: 10px;
+}
+
+/* System diagrams and control interface */
+
+.regenloop-page > section.rl-section:not(.projects-section):not(.introduction-section) {
+    background: var(--white);
+}
+
+.regenloop-page .rl-feature {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+    gap: 36px;
+}
+
+.regenloop-page .rl-feature + .rl-feature {
+    margin-top: 38px;
+    padding-top: 38px;
+    border-top: 1px solid var(--border);
+}
+
+.regenloop-page .rl-feature h3 {
+    margin: 0 0 12px;
+    color: var(--heading);
+    font-family: var(--heading-font);
+    font-size: clamp(1.3rem, 2.3vw, 1.7rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+}
+
+.regenloop-page .rl-feature-wide {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.regenloop-page .rl-feature-wide .rl-copy {
+    max-width: 800px;
+}
+
+.regenloop-page .rl-figure {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0 8px 24px rgba(31, 63, 79, 0.045);
+}
+
+.regenloop-page .rl-image-link {
+    display: block;
+    padding: 12px;
+    background: var(--white);
+}
+
+.regenloop-page .rl-image-link img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.regenloop-page .rl-figure figcaption {
+    margin: 0;
+    padding: 12px 16px;
+    color: var(--gray);
+    border-top: 1px solid var(--border);
+    background: var(--light-gray);
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+.regenloop-page .rl-list {
+    margin: 14px 0 0;
+    padding-left: 18px;
+}
+
+.regenloop-page .rl-list li {
+    margin-bottom: 7px;
+    padding-left: 3px;
+    color: var(--gray);
+    font-size: 0.86rem;
+    line-height: 1.7 !important;
+}
+
+.regenloop-page .rl-list li::marker {
+    color: var(--accent);
+}
+
+/* Outcomes and next steps */
+
+.regenloop-page > .skills-section {
+    padding: 52px 0;
+    color: var(--white);
+    background: var(--heading);
+}
+
+.regenloop-page .skills-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 48px;
+}
+
+.regenloop-page .skills-introduction h2 {
+    color: var(--white);
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.12;
+}
+
+.regenloop-page .skills-introduction > p:not(.section-label) {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.9rem;
+    line-height: 1.8 !important;
+}
+
+.regenloop-page .skills-section .section-label,
+.regenloop-page .skill-item > span {
+    color: var(--accent-light);
+}
+
+.regenloop-page .skill-item h3 {
+    color: var(--white);
+    font-size: 1.08rem;
+}
+
+.regenloop-page .skill-item p {
+    margin-top: 6px !important;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.85rem;
+    line-height: 1.7 !important;
+}
+
+/* Poster and presentation photo */
+
+.regenloop-page #poster {
+    border-bottom: 1px solid var(--border);
+    background: var(--page-background);
+    scroll-margin-top: 24px;
+}
+
+.regenloop-page .rl-poster-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 44px;
+}
+
+.regenloop-page .rl-poster-copy {
+    flex: 1 1 340px;
+}
+
+.regenloop-page .rl-poster-copy strong {
+    color: var(--heading);
+}
+
+.regenloop-page .rl-poster-photo {
+    flex: 1 1 340px;
+    max-width: 520px;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--accent);
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.regenloop-page .rl-poster-photo[hidden] {
+    display: none;
+}
+
+.regenloop-page .rl-poster-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.regenloop-page .rl-poster-photo figcaption {
+    padding: 13px 17px;
+    color: var(--gray);
+    font-size: 0.76rem;
+    line-height: 1.6;
+}
+
+/* Research team */
+
+.regenloop-page .rl-team {
+    max-width: 900px;
+    padding-left: 22px;
+    border-left: 3px solid var(--accent);
+}
+
+.regenloop-page .rl-team p:first-child {
+    margin-top: 0;
+}
+
+.regenloop-page .rl-team p:last-child {
+    margin-bottom: 0;
+}
+
+.regenloop-page .rl-team strong {
+    color: var(--heading);
+    font-weight: 600;
+}
+
+/* Closing links */
+
+.regenloop-page > .contact-cta {
+    padding: 42px 0;
+    background: linear-gradient(
+        120deg,
+        var(--soft-background),
+        var(--page-background)
+    );
+}
+
+.regenloop-page .contact-cta h2 {
+    font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+    .regenloop-page .rl-overview,
+    .regenloop-page .rl-feature,
+    .regenloop-page .skills-layout {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .regenloop-page .rl-overview .section-title {
+        max-width: 680px;
+    }
+}
+
+@media (max-width: 640px) {
+    .regenloop-page .rl-hero {
+        padding: 28px 0 38px;
+    }
+
+    .regenloop-page .rl-back {
+        margin-bottom: 24px;
+    }
+
+    .regenloop-page .rl-section,
+    .regenloop-page > .skills-section {
+        padding: 38px 0;
+    }
+
+    .regenloop-page .rl-contributions {
+        grid-template-columns: 1fr;
+    }
+
+    .regenloop-page .rl-contributions .project-content {
+        padding: 21px;
+    }
+
+    .regenloop-page .rl-feature + .rl-feature {
+        margin-top: 28px;
+        padding-top: 28px;
+    }
+
+    .regenloop-page .rl-poster-layout {
+        gap: 26px;
+    }
+
+    .regenloop-page .rl-poster-copy,
+    .regenloop-page .rl-poster-photo {
+        flex-basis: 100%;
+        min-width: 0;
+        max-width: none;
+    }
+
+    .regenloop-page .rl-team {
+        padding-left: 16px;
+    }
+}
+
+/* Restore the mountain background */
+.regenloop-page .hero-area {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(238, 247, 250, 0.92),
+            rgba(220, 236, 242, 0.70)
+        ),
+        url("image/mountain.JPG") center / cover no-repeat;
+}
